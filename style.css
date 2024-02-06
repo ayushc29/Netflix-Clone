@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/img/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1300px, 100vw);
+  height: 700px;
+  position: relative;
+}
+
+.main .box {
+  height: 700px;
+  width: 100%;
+  opacity: 0.6;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  top: 0;
+}
+
+nav img {
+  width: 154px;
+  position: relative;
+  z-index: 10;
+  top: 0;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+/* .box {
+  position: relative;
+  z-index: 2;
+  color: white;
+} */
+
+.head_text {
+  display: flex;
+  height: calc(100% - 100px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  gap: 24px;
+  padding: 0 32px;
+}
+
+.head_text > :nth-child(1) {
+  font-size: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.head_text > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.head_text > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.separation {
+  background-color: rgba(128, 128, 128, 0.348);
+  height: 7px;
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.475);
+  border: 1px solid rgba(255, 255, 255, 0.441);
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 13px 35px;
+  border: none;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.head_text-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.email{
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 17px 100px 15px 14px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.441);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  max-width: 75vw;
+  margin: auto;
+  color: white;
+  height: fit-content;
+}
+
+
+
+.sec_img {
+  position: relative;
+}
+
+.sec_img img {
+  max-height: max-content;
+  width: 566px;
+  position: relative;
+  z-index: 10;
+
+}
+
+.sec_img video {
+  position: absolute;
+  top: 120px;
+  right: 80px;
+  width: 410px;
+}
+
+/* .first {
+  height: 77vh;
+} */
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 14px;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.third video {
+  position: absolute;
+  top: 84px;
+  right: 100px;
+  width: 360px;
+}
+
+/* .fourth > div{
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+.fourth > div :first-child {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.fourth > div :nth-child(2) {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 14px;
+} */
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 48px;
+}
+
+.faqbox:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.faqbox {
+  transition: all 0.5s;
+  display: flex;
+  background-color: rgb(37, 37, 37);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  padding: 28px;
+  max-width: 75vw;
+  margin: 8px auto;
+  cursor: pointer;
+}
+
+.faq_foot{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+  margin-bottom: 50px;
+}
+
+.faq_foot_txt{
+  font-family: 'Helvetica';
+  font-size: 18px;
+}
+
+footer {
+  color: rgb(183, 182, 182);
+  max-width: 60vw;
+  margin: auto;
+}
+
+footer .questions {
+  padding: 24px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  padding: 34px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: rgb(183, 182, 182);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .first{
+    flex-wrap: wrap;
+  }
+  .txt span{
+    text-align: center;
+  }
+  .head_text > :nth-child(1) {
+    font-size: 32px;
+  }
+  
+  .head_text > :nth-child(2) {
+    font-size: 16px;
+  }
+  
+  .head_text > :nth-child(3) {
+    font-size: 16px;
+  }
+  nav img {
+    width: 100px;
+  }
+  .sec_img img {
+    width: 305px;
+  }
+
+  .sec_img video{
+  position: absolute;
+  top: 81px;
+  right: 42px;
+  width: 225px;
+  }
+
+  .third video{
+    position: absolute;
+    top: 65px;
+    width: 185px;
+    right: 60px;
+  }
+  
+  section.first > div :first-child {
+    font-size: 30px;
+  }
+  
+  section.first > div :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .head_text-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .second, .fourth{
+    flex-direction: column-reverse;
+  }
+
+  .faq_foot_txt{
+    text-align: center;
+  }
+
+  .faq > h2{
+    font-size: 30px;
+  }
+
+  .faqbox{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+  }
+}
